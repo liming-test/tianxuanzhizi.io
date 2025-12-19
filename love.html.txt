@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱你老婆</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #ffccd5, #ffb6c1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        /* 中央大爱心 */
+        .big-heart {
+            width: 180px;
+            height: 160px;
+            position: relative;
+            margin-bottom: 30px;
+            animation: beat 1.5s infinite ease-in-out;
+        }
+        .big-heart::before, .big-heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 160px;
+            background: #ff4040;
+            border-radius: 50px 50px 0 0;
+        }
+        .big-heart::before {
+            left: 100px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .big-heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        /* 文字样式 */
+        .love-text {
+            font-family: 'Microsoft YaHei', sans-serif;
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(255, 64, 64, 0.5);
+            animation: fadeIn 3s ease-in-out;
+        }
+        /* 飘落的小爱心 */
+        .small-heart {
+            positi
